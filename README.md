@@ -110,6 +110,7 @@ DOI = {10.3390/digital6010008}
 ```
 
 **APA Style**
+
 Shalawati, S., Nasution, A. H., Monika, W., Derin, T., Onan, A., & Murakami, Y. (2026). Beyond BLEU: GPT–5, Human Judgment, and Classroom Validation for Multidimensional Machine Translation Evaluation. Digital, 6(1), 8. https://doi.org/10.3390/digital6010008
 
 ## 📬 Contact
