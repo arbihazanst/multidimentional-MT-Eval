@@ -17,25 +17,42 @@ The results show that GPT–5 demonstrates strong agreement with human evaluator
 
 ---
 
-## 📁 Repository Contents
+## ✨ What is inside this repo?
 
-```
+- **Jupyter notebooks** for MT evaluation and BLEU baseline analysis  
+- **Human evaluation results** (CSV)  
+- **GPT-based evaluation results** (CSV) for three open LLM translation systems  
+- Materials that enable **reproducibility** and **extension** of the analysis
+
+---
+
+## 📌 Repository structure (current)
+
+> This tree reflects the **actual directory structure** shown in the repository.
+
+```text
 .
-├── rubric/
-│   └── MQM_multidimensional_rubric.pdf
-├── data/
-│   ├── human_scores_anonymized.csv
-│   ├── gpt5_scores.csv
-│   └── student_evaluation_data.csv
-├── analysis/
-│   ├── agreement_analysis.py
-│   ├── correlation_plots.ipynb
-│   └── statistical_tests.py
-├── results/
-│   ├── figures/
-│   └── tables/
-└── README.md
+├── Bleu_Evaluation.ipynb
+├── MT_Evaluation.ipynb
+├── README.md
+├── gpt_evaluation_result_gemma3_1b_EN_ID_0_1*.csv
+├── gpt_evaluation_result_llama3.2_3b_EN_ID_0_10*.csv
+├── gpt_evaluation_result_qwen3_0.6b_EN_ID_0_10*.csv
+└── human_evaluation_result.csv
 ```
+
+**File descriptions**
+- `Bleu_Evaluation.ipynb`  
+  Notebook for BLEU-based baseline evaluation.
+- `MT_Evaluation.ipynb`  
+  Main notebook for MQM-aligned multidimensional evaluation analysis.
+- `human_evaluation_result.csv`  
+  Aggregated human expert scores (anonymized), used as the primary reference for analysis.
+- `gpt_evaluation_result_*.csv`  
+  GPT-based evaluator output scores for each model system:
+  - **Gemma 3 (1B)**
+  - **LLaMA 3.2 (3B)**
+  - **Qwen 3 (0.6B)**
 
 ---
 
@@ -66,34 +83,6 @@ Evaluation is conducted using expert human evaluators, GPT–5 as an LLM-based e
 
 ---
 
-## 🔁 Reproducibility
-
-1. Clone the repository:
-```bash
-git clone https://github.com/arbihazanst/multidimentional-MT-Eval.git
-cd multidimentional-MT-Eval
-```
-
-2. Install dependencies:
-```bash
-pip install -r requirements.txt
-```
-
-3. Run analysis:
-```bash
-python analysis/agreement_analysis.py
-```
-
----
-
-## 📂 Data Availability
-
-The data supporting the findings of this study are openly available in this repository and include the evaluation rubric, anonymized scoring data, analysis scripts, and reproduction instructions.
-
-Accessed on: 12 January 2026.
-
----
-
 ## 🎓 Educational Use
 
 This repository is suitable for classroom-based MT evaluation, rubric calibration exercises, and comparative analysis between human and LLM-based judgments.
@@ -104,8 +93,24 @@ This repository is suitable for classroom-based MT evaluation, rubric calibratio
 
 If you use this repository, please cite the associated MDPI article.
 
+**BibTeX**
+```bibtex
+@article{nasution2026_beyondbleu,
+AUTHOR = {Shalawati, Shalawati and Nasution, Arbi Haza and Monika, Winda and Derin, Tatum and Onan, Aytug and Murakami, Yohei},
+TITLE = {Beyond BLEU: GPT–5, Human Judgment, and Classroom Validation for Multidimensional Machine Translation Evaluation},
+JOURNAL = {Digital},
+VOLUME = {6},
+YEAR = {2026},
+NUMBER = {1},
+ARTICLE-NUMBER = {8},
+URL = {https://www.mdpi.com/2673-6470/6/1/8},
+ISSN = {2673-6470},
+DOI = {10.3390/digital6010008}
+}
+```
+
+**APA Style**
 Shalawati, S., Nasution, A. H., Monika, W., Derin, T., Onan, A., & Murakami, Y. (2026). Beyond BLEU: GPT–5, Human Judgment, and Classroom Validation for Multidimensional Machine Translation Evaluation. Digital, 6(1), 8. https://doi.org/10.3390/digital6010008
----
 
 ## 📬 Contact
 
